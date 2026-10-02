@@ -1,0 +1,31 @@
+model,features,구분,F1-Score,Accuracy,비고,final_model,Macro_F1,Short_Recall,Balanced_Accuracy
+Dummy,basic_delta,Train (Batch 1 CV),,,단수명 표본/정책 그룹 부족으로 계산 불가,False,,,
+Dummy,basic_delta,Valid (Batch 1 Hold-out),1.0,1.0,장수명만 포함: 단수명 검증 불가,False,,,
+Dummy,basic_delta,Test (Batch 2),0.375,0.23076923076923078,선택 후 최종 평가,False,0.1875,0.0,0.5
+Dummy,basic_delta,Gap (Train-Valid),,,CV 결측으로 Gap 계산 불가,False,,,
+Dummy,basic_delta,Gap (Valid-Test),0.625,0.7692307692307692,클래스 구성도 달라 과적합으로 단정 불가,False,,,
+Dummy,basic_delta,Gap (Target-Test),,0.7202307692307692,Target Accuracy 95.1%; F1 목표값은 미제시,False,,,
+Logistic,basic_delta,Train (Batch 1 CV),,,단수명 표본/정책 그룹 부족으로 계산 불가,True,,,
+Logistic,basic_delta,Valid (Batch 1 Hold-out),1.0,1.0,장수명만 포함: 단수명 검증 불가,True,,,
+Logistic,basic_delta,Test (Batch 2),0.26666666666666666,0.15384615384615385,선택 후 최종 평가,True,0.13333333333333333,0.0,0.3333333333333333
+Logistic,basic_delta,Gap (Train-Valid),,,CV 결측으로 Gap 계산 불가,True,,,
+Logistic,basic_delta,Gap (Valid-Test),0.7333333333333334,0.8461538461538461,클래스 구성도 달라 과적합으로 단정 불가,True,,,
+Logistic,basic_delta,Gap (Target-Test),,0.7971538461538461,Target Accuracy 95.1%; F1 목표값은 미제시,True,,,
+SVM,basic_delta,Train (Batch 1 CV),,,단수명 표본/정책 그룹 부족으로 계산 불가,False,,,
+SVM,basic_delta,Valid (Batch 1 Hold-out),1.0,1.0,장수명만 포함: 단수명 검증 불가,False,,,
+SVM,basic_delta,Test (Batch 2),0.375,0.23076923076923078,선택 후 최종 평가,False,0.1875,0.0,0.5
+SVM,basic_delta,Gap (Train-Valid),,,CV 결측으로 Gap 계산 불가,False,,,
+SVM,basic_delta,Gap (Valid-Test),0.625,0.7692307692307692,클래스 구성도 달라 과적합으로 단정 불가,False,,,
+SVM,basic_delta,Gap (Target-Test),,0.7202307692307692,Target Accuracy 95.1%; F1 목표값은 미제시,False,,,
+ShrinkageLDA,basic_delta,Train (Batch 1 CV),,,단수명 표본/정책 그룹 부족으로 계산 불가,False,,,
+ShrinkageLDA,basic_delta,Valid (Batch 1 Hold-out),1.0,1.0,장수명만 포함: 단수명 검증 불가,False,,,
+ShrinkageLDA,basic_delta,Test (Batch 2),0.2222222222222222,0.28205128205128205,선택 후 최종 평가,False,0.2777777777777778,0.23333333333333334,0.3388888888888889
+ShrinkageLDA,basic_delta,Gap (Train-Valid),,,CV 결측으로 Gap 계산 불가,False,,,
+ShrinkageLDA,basic_delta,Gap (Valid-Test),0.7777777777777778,0.717948717948718,클래스 구성도 달라 과적합으로 단정 불가,False,,,
+ShrinkageLDA,basic_delta,Gap (Target-Test),,0.6689487179487179,Target Accuracy 95.1%; F1 목표값은 미제시,False,,,
+RandomForest,basic_delta,Train (Batch 1 CV),,,단수명 표본/정책 그룹 부족으로 계산 불가,False,,,
+RandomForest,basic_delta,Valid (Batch 1 Hold-out),1.0,1.0,장수명만 포함: 단수명 검증 불가,False,,,
+RandomForest,basic_delta,Test (Batch 2),0.30434782608695654,0.1794871794871795,선택 후 최종 평가,False,0.15217391304347827,0.0,0.3888888888888889
+RandomForest,basic_delta,Gap (Train-Valid),,,CV 결측으로 Gap 계산 불가,False,,,
+RandomForest,basic_delta,Gap (Valid-Test),0.6956521739130435,0.8205128205128205,클래스 구성도 달라 과적합으로 단정 불가,False,,,
+RandomForest,basic_delta,Gap (Target-Test),,0.7715128205128204,Target Accuracy 95.1%; F1 목표값은 미제시,False,,,

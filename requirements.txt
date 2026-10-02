@@ -1,10 +1,12 @@
+# Python 3.11 권장
 numpy
 pandas
-matplotlib
+matplotlib>=3.5
 scipy
 h5py
-scikit-learn
+mat73
+scikit-learn>=1.2
 jupyter
 ipykernel
-xgboost
-lightgbm
+nbformat
+nbclient
